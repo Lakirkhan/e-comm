@@ -1,0 +1,254 @@
+/* General Styling */
+.product-page {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+/* Product Container */
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+/* Product Image Section */
+.product-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.product-image img {
+  max-width: fit-content;
+    height: 300px;
+    border-radius: 10px;
+}
+
+/* Product Information Section */
+.product-info {
+  flex: 1;
+  padding: 20px;
+}
+
+.product-title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.product-price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #d9534f;
+  margin-bottom: 10px;
+}
+
+.product-rating {
+  font-size: 18px;
+  font-weight: bold;
+  color: #f39c12;
+}
+
+.stars {
+  color: #f39c12;
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+
+.product-category {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.product-description {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.read-more {
+  color: #007bff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.product-in-cart-msg {
+  font-size: 16px;
+  color: #28a745;
+  font-weight: bold;
+}
+
+.add-to-cart-btn {
+  background-color: #007bff;
+  margin-top: 20px;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Suggested Products Section */
+.suggested-products {
+  text-align: center;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.suggested-products h2 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.suggested-products-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.suggested-product-card {
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  width: 200px;
+  text-align: center;
+}
+
+.suggested-product-card:hover {
+  transform: translateY(-5px);
+}
+
+.suggested-product-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.suggested-product-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.suggested-product-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.suggested-product-price {
+  font-size: 14px;
+  color: #d9534f;
+}
+
+/* Recommended Products Section */
+.recommended-products {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.recommended-products h2 {
+  font-size: 2rem;
+  color: #232f3e;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.recommended-products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.recommended-product-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s;
+  position: relative;
+}
+
+.recommended-product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.recommended-product-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.recommended-product-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.recommended-product-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #232f3e;
+}
+
+.recommended-product-price {
+  font-size: 1.3rem;
+  color: #b12704;
+  font-weight: bold;
+}
+
+/* Responsive Design for Recommended Products */
+@media (max-width: 768px) {
+  .recommended-products-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .product-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-image, .product-info {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .suggested-products-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
